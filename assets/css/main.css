@@ -1,0 +1,481 @@
+:root {
+  --mainfont: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #000;
+  font-family: var(--mainfont);
+}
+
+.outline-0 {
+  outline: 0;
+}
+
+.subfont {
+  color: #aaa;
+}
+
+.main-bg {
+  background-color: #0087E3;
+}
+
+.sub-pattern {
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  transition: border-radius 0.4s ease-in-out;
+}
+
+.custom-style {
+  transition: all 0.3s ease;
+}
+
+.custom-style:hover {
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #0087E3;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #0198FF;
+  border-bottom-color: #0198FF;
+}
+
+.custom-a a {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.custom-a a:hover {
+  color: #0198FF;
+  border-bottom: 1px solid #0198FF;
+}
+
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  padding: 2;
+  border-bottom: 1px solid #fff;
+}
+
+/* FIX: Only target navbar dropdown menu */
+.navbar .dropdown-menu {
+  left: 0;
+  right: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, transform .3s ease;
+  transform: translateY(-15px);
+  display: block;
+}
+
+.navbar .nav-item.dropdown.show .dropdown-menu,
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  transform: translateY(0);
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Let Bootstrap dropdowns outside navbar work normally */
+.dropdown-menu.show {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.navbar-nav .nav-item .nav-link-title {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover .nav-link-title {
+  color: #0198FF;
+  border-bottom-color: #0198FF;
+}
+
+
+.custom-rounded {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: border-radius 0.4s ease-in-out;
+}
+
+.custom-arrow-icon path {
+  fill: white;
+  transition: fill 0.3s ease;
+
+}
+
+
+.custom-arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.nav-item.dropdown:hover>.nav-link {
+  color: #0198FF !important;
+}
+
+.nav-item.dropdown:hover .custom-arrow-icon path {
+  fill: #0198FF !important;
+}
+
+.nav-item.dropdown:hover .custom-arrow-icon {
+  transform: rotate(180deg);
+}
+
+.navbar.nav-item.dropdown.show .dropdown-menu,
+.navbar.nav-item.dropdown:hover .dropdown-menu {
+  transform: translateY(0);
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.layout-title,
+.product-name {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  color: #000;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.layout-link:hover .layout-title,
+.layout-link:hover .product-name {
+  color: #0198FF;
+  border-bottom-color: #0198FF;
+}
+
+@media screen and (max-width:1210px) {
+  .shop-image {
+    flex-wrap: wrap;
+  }
+
+  .shop-image img {
+    width: 100%;
+  }
+}
+
+.custom-dropdown-menue {
+  /* min-width: 200px; */
+  width: auto;
+  text-align: center;
+  border-radius: 0 !important;
+}
+
+.custom-dropdown-menue ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.language-icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  .cart {
+    display: flex;
+    justify-content: start !important;
+  }
+
+}
+
+.offcanvas-header .btn-close {
+  color: #fff;
+  background-color: #3071EA !important;
+}
+
+.offcanvas-title {
+  width: 100%;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #1388F6;
+}
+
+.custom-btn {
+  background: linear-gradient(135deg, #3071EA, #7A36C9);
+  border: none;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:hover {
+  background: #3071EA;
+  transition: all .4s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn-link:hover .custom-rounded {
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+}
+
+.search-form form {
+  background-color: transparent;
+  border: 2px solid rgb(131, 131, 131);
+
+}
+
+.search-form input {
+  background-color: transparent;
+  caret-color: white;
+  padding-left: 40px;
+
+}
+
+input[type='text']::placeholder {
+  text-align: start;
+  color: #aaa;
+}
+
+@media screen and (max-width : 900px) {
+
+  .promo-banner,
+  .Best-seller {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+.custom-bg {
+  background: linear-gradient(135deg, #0087E3, #012D4B);
+
+}
+
+.best-pro-gaming {
+  position: relative;
+  background-image: url('./../image/Gaming-bg-photo/home-banner.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.overlay-blur {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width : 414px) {
+  .breadcrumb {
+    flex-direction: column !important;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+.product-bg {
+  background-color: rgb(1, 23, 37);
+}
+
+.border-gray {
+  border: 1px solid #aaa;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.shadow-section {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #0e0e1a;
+}
+
+.project-name {
+  overflow-x: scroll;
+}
+
+.project-name::-webkit-scrollbar {
+  display: none;
+}
+
+.responsive-link {
+  width: 25%;
+}
+
+@media screen and (max-width: 1104px) {
+  .responsive-link {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .responsive-link {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.best-gaming-categories {
+  height: 60vh;
+}
+
+.translate-up {
+
+  transform: translateY(-350px);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 715px) {
+  .translate-up {
+    transform: translateY(0px);
+
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .product-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-box {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .best-gaming-categories {
+    height: auto;
+  }
+}
+
+.categories-bg {
+  background-color: #E1F3FF;
+}
+
+
+.subscribe-form {
+
+  border: 2px solid #aaa;
+}
+
+.custom-border {
+  border: 1px solid #0087E3;
+
+}
+
+.sub-bg {
+  background-color: #E2F3FF;
+}
+
+.subscribe-img img {
+  /* scale: 1.2; */
+
+}
+
+@media screen and (min-width: 1118px) {
+  .subscribe-banner {}
+}
+
+@media screen and (min-width: 375px) {
+  .subscribe-banner {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1208px) {
+  .translate-down {
+    transform: translateY(50px);
+  }
+}
+
+.services-img {
+  width: 240px;
+  height: 240px;
+}
+
+.translate-up-little {
+  transform: translateY(-30px);
+}
+
+.translate-up-down {
+  transform: translateY(0px);
+}
+
+@media (max-width: 1030px) {
+  .image-none {
+    display: none;
+  }
+
+  .services-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .translate-up-little {
+    transform: translateY(0px);
+  } */
+
+}
+
+@media (max-width: 500px) {
+  .image-none {
+    display: none;
+  }
+
+  .services-img {
+    margin: auto;
+  }
+
+  .translate-up-little {
+    transform: translateY(0px);
+  }
+
+  .translate-up-down {
+    transform: translateY(0px);
+  }
+}
+
+.product {
+  width: 240px;
+}
+
+@media (max-width: 700px) {
+  .product {
+    margin: auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  .client  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem !important;
+  }
+}
