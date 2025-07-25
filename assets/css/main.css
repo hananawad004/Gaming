@@ -473,9 +473,15 @@ input[type='text']::placeholder {
 }
 
 @media (max-width: 1300px) {
-  .client  {
+  .client {
     display: flex;
     flex-direction: column;
     row-gap: 2rem !important;
   }
+}
+
+.custom-footer-a {
+  display: block;
+  color: #ffffff;
+  /* padding: 1rem; */
 }
