@@ -468,6 +468,15 @@ input[type='text']::placeholder {
     transform: translateY(0px);
   }
 }
+.image-blur-zoom {
+  transition: all 0.4s ease;
+  filter: brightness(-0.5);
+}
+
+.image-blur-zoom:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1) blur(1px);
+}
 
 .product {
   width: 240px;
