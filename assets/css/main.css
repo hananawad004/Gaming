@@ -14,9 +14,11 @@ body {
 .subfont {
   color: #aaa;
 }
-.border-gray{
-border: 1px solid #aaa;
+
+.border-gray {
+  border: 1px solid #aaa;
 }
+
 .main-bg {
   background-color: #0087E3;
 }
@@ -78,7 +80,7 @@ li {
   border-bottom: 1px solid #fff;
 }
 
-/* FIX: Only target navbar dropdown menu */
+
 .navbar .dropdown-menu {
   left: 0;
   right: 0;
@@ -99,7 +101,7 @@ li {
   visibility: visible;
 }
 
-/* Let Bootstrap dropdowns outside navbar work normally */
+
 .dropdown-menu.show {
   display: block !important;
   opacity: 1 !important;
@@ -121,6 +123,12 @@ li {
 .custom-rounded {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  transition: border-radius 0.4s ease-in-out;
+}
+
+.custom-rounded-standard {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   transition: border-radius 0.4s ease-in-out;
 }
 
@@ -390,7 +398,7 @@ input[type='text']::placeholder {
 }
 
 .custom-border {
-  border: 1px solid #0087E3;
+  border: 2px solid #0087E3;
 
 }
 
@@ -516,9 +524,42 @@ input[type='text']::placeholder {
 }
 
 .form-check-color button {
- 
+
   width: 25px;
   height: 25px;
   border-radius: 45%;
   border: 1px solid #000;
+}
+
+.bg-blue {
+  background-color: transparent;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-blue:hover {
+  background-color: #0087E3;
+  color: white;
+}
+
+.color-white-custom {
+  background-color: transparent;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.color-white-custom:hover {
+  color: #ffffff;
+
+}
+
+.divider {
+  width: 2px;
+  height: 20px;
+  background-color: #555;
+  opacity: 0.8;
+}
+
+.product-img {
+  border: 5px solid #0087E3;
 }
