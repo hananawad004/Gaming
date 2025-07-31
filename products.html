@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!--bootstrap css 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!--custom css-->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg   ">
+        <div class="container-fluid mx-5 ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto  d-flex gap-3">
+                    <li class="nav-item dropdown position-static  ">
+
+                        <a class="nav-link  text-white d-flex align-items-center  gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="nav-link-title">Home</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu  text-center position-absolute  p-4 top-100 w-100 ">
+                            <div class="row justify-content-center  border-0">
+                                <div class="col-md-3 ">
+                                    <a href="layout1.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded" src="./assets/image/layout/gaming_1.webp"
+                                            alt="layout1">
+                                        <p class="layout-title ">Layout 1</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <a href="layout2.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded" src="./assets/image/layout/gaming_2.webp"
+                                            alt="layout1">
+                                        <p class="layout-title ">Layout 2</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <a href="layout3.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded"
+                                            src="./assets/image/layout/mega-menu-image3.webp" alt="layout3">
+                                        <p class="layout-title ">Layout 3</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-flex justify-content-between position-static ">
+
+                        <a class="nav-link  text-white d-flex align-items-center gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="nav-link-title">Shop</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu  custom-a  position-absolute  p-5 top-100 w-100  ">
+                            <div class="row gap-3 justify-content-start border-0">
+                                <div class="Category-Page col-md-3">
+                                    <a href="#">
+                                        <h3 class="text-black">Category Page</h3>
+                                    </a>
+                                    <ul class="Category-Page-items">
+                                        <li class="Category-Page-item text-decoration-none"><a href="#"
+                                                class="Category-Page-item-link text-decoration-none text-black">Gaming
+                                                PCs</a>
+                                        </li>
+                                        <li class="Category-Page-item"><a href="#"
+                                                class="Category-Page-item-link text-black">Game Remote</a>
+                                        </li>
+                                        <li class="Category-Page-item"><a href="#"
+                                                class="Category-Page-item-link text-black">Gaming Cards</a>
+                                        </li>
+                                        <li class="Category-Page-item"><a href="#"
+                                                class="Category-Page-item-link text-black">Gaming Chairs</a>
+                                        </li>
+                                        <li class="Category-Page-item"><a href="#"
+                                                class="Category-Page-item-link text-black">Gaming Moniter</a>
+                                        </li>
+                                        <li class="Category-Page-item"><a href="#"
+                                                class="Category-Page-item-link text-black">Game Console</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="Feature-product col-md-3">
+                                    <a>
+                                        <h3 class="text-black">
+                                            Feature-product
+                                        </h3>
+                                    </a>
+
+                                    <ul class="Feature-product-items">
+                                        <li class="Feature-product-item"><a href="#"
+                                                class="Feature-product-item-link text-black">Gaming Office Chair</a>
+                                        </li>
+                                        <li class="Feature-product-item"><a href="#"
+                                                class="Feature-product-item-link text-black ">
+                                                Gaming
+                                                Chair
+                                                for Gamers with Lumbar</a></li>
+                                        <li class="Feature-product-item"><a href="#"
+                                                class="Feature-product-item-link text-black">HTC Vive Tracker (3.0)
+                                                -
+                                                PC</a></li>
+                                        <li class="Feature-product-item"><a href="#"
+                                                class="Feature-product-item-link text-black">VR Headset with
+                                                Headphones</a></li>
+                                        <li class="Feature-product-item"><a href="#"
+                                                class="Feature-product-item-link text-black">RX 590 GTS Graphics
+                                                Card</a></li>
+                                        <li class="Feature-product-item"><a href="3"
+                                                class="Feature-product-item-link text-black">RX 680 GTS Graphics
+                                                Card</a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-image d-flex justify-content-start p-3 gap-3   col-md-3 col-lg-3 ">
+                                    <img class="img-fluid custom-rounded " src="./assets/image/layout/megamenu1.webp"
+                                        alt="megamenu1">
+                                    <img class="img-fluid custom-rounded" src="./assets/image/layout/megamenu2.webp"
+                                        alt="megamenu2">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown position-static   ">
+
+                        <a class="nav-link  text-white d-flex align-items-center  gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="nav-link-title">Product</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu  text-center position-absolute  p-4 top-100 w-100 ">
+                            <div class="row justify-content-center p-3 border-0">
+                                <div class="col-md-3 ">
+                                    <a href="gaming-monitor.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded"
+                                            src="./assets/image/layout/gaming-desktop-pc.webp" alt="gaming-desktop-pc">
+                                        <p class="product-name ">Gaming Moniter</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <a href="gaming-remote.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded"
+                                            src="./assets/image/layout/gaming-desktop2.webp" alt="gaming-desktop-pc-2">
+                                        <p class="product-name ">Gaming Remote</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <a href="gaming-cards.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded"
+                                            src="./assets/image/layout/young-man-wearing-vr-goggles-video-game.webp"
+                                            alt="young-man-wearing-vr-goggles-video-game">
+                                        <p class="product-name ">Gaming Cards</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <a href="gaming-pcs.html"
+                                        class="layout-link text-decoration-none text-dark  d-flex flex-column align-items-center gap-3">
+                                        <img class="img-fluid custom-rounded"
+                                            src="./assets/image/layout/professional-gamer-high-tech-game-room.webp"
+                                            alt="professional-gamer-high-tech-game-room">
+                                        <p class="product-name ">Gaming PCs</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown  ">
+
+                        <a class="nav-link  text-white d-flex align-items-center  gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="nav-link-title">Pages</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu custom-dropdown-menue   custom-a  p-2 top-100 ">
+                            <ul class=" d-flex flex-column align-items-start row-gap-2 text-nowrap ">
+                                <li class="pages-item"><a href="#" class="pages-item-link">About Us</a></li>
+                                <li class="pages-item"><a href="#" class="pages-item-link">Contact with us</a></li>
+                                <li class="pages-item"><a href="#" class="pages-item-link">FAQ's</a></li>
+                                <li class="pages-item"><a href="#" class="pages-item-link">Privacy Policy</a></li>
+                                <li class="pages-item"><a href="#" class="pages-item-link">Shipping & Delivery</a>
+                                </li>
+                                <li class="pages-item"><a href="#" class="pages-item-link">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown  ">
+
+                        <a class="nav-link  text-white d-flex align-items-center  gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="nav-link-title">Blogs</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu custom-dropdown-menue custom-a   p-2 top-100 ">
+                            <ul class=" d-flex flex-column align-items-start w-75 row-gap-2  ">
+                                <li class="pages-item"><a href="#" class="pages-item-link">Blog Page</a></li>
+                                <li class="pages-item"><a href="#" class="pages-item-link">Article Page</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <a class="navbar-brand text-white p-3 me-5 " href="#">
+                    <h1>Gaming</h1>
+                </a>
+                <ul class="navbar-nav  ms-auto  d-flex gap-4 ">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link  d-flex align-items-center  gap-1  text-white" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="language-icon-img img-fluid" src="./assets/image/icons/english.svg"
+                                alt="englisgh-icon">
+                            <span>English</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/arabic.svg"
+                                        alt="arabic-icon">
+                                    <span>Arabic</span>
+
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/deutsch.svg"
+                                        alt="deutsch-icon">
+                                    <span>Deutsch</span>
+
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/espan.svg"
+                                        alt="espan-icon">
+                                    <span>Espanol</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link  d-flex align-items-center  gap-1  text-white" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="language-icon-img img-fluid" src="./assets/image/icons/usd.svg" alt="usd-icon">
+                            <span>USD</span>
+                            <svg class="custom-arrow-icon" xmlns="http://www.w3.org/2000/svg " width=12px height="12px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/aud.svg"
+                                        alt="aud-icon">
+                                    <span>AUD </span>
+                                    <span> $</span>
+
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/cad.svg"
+                                        alt="cad-icon">
+                                    <span>CAD</span>
+                                    <span>$</span>
+
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/eur.svg"
+                                        alt="eur-icon">
+                                    <span>EUR</span>
+                                    <span>€</span>
+
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img class="language-icon-img img-fluid" src="./assets/image/icons/usd.svg"
+                                        alt="usd-icon">
+                                    <span>USD</span>
+                                    <span>$</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item "> <a href="login.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                            </svg>
+                        </a></li>
+                    <li class="nav-item ">
+
+
+                        <a href="#" class=" cart d-flex justify-content-center align-items-center gap-2"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div>
+                                <span class="text-white">My Cart:</span>
+                                <br>
+                                <span class="text-white">$0.00</span>
+                            </div>
+                            <span class="position-relative  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                    viewBox="0 0 576 512">
+                                    <path fill="#ffffff"
+                                        d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                                </svg>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-black">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </span>
+
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </nav>
+    <section class="promo-banner custom-border-bottom  d-flex justify-content-around ">
+        <div class="banner-title d-flex align-items-center p-4">
+            <p class="text-white">New Accessories -30 % Off. More</p>
+        </div>
+        <div class="search-form p-4 ">
+            <form class="position-relative  w-75 custom-rounded p-2 ">
+                <button
+                    class="position-absolute ms-2 top-50 start-0 translate-middle-y outline-0 border-0 bg-transparent p-2 z-1 ">
+                    <svg class=" " xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#383838"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg></button>
+                <input class="border-0  z-2 text-white custom-rounded ps-5 outline-0" type="text"
+                    placeholder="Search Product...">
+
+            </form>
+        </div>
+        <div class="new-collection  d-flex align-items-center p-4">
+            <a class="text-white text-decoration-underline" href="collections.html">New Collection</a>
+        </div>
+
+    </section>
+    <section class=" gaming-monitor-description text-white">
+        <div class="container p-5">
+            <div class="row">
+                <div class=" col-md-6 p-3">
+                    <div class="back-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                        </svg>
+                        <a class="text-white back-btn-a ">back to home</a>
+                    </div>
+                    <h2 class="py-4">Products</h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-5">
+        <div>
+            <div class="container  mb-4">
+                <div class="row border-bottom ">
+                    <div class="col-md-3">
+                        <h2 class="fw-bold mb-4 p-1 ">Filters</h2>
+                    </div>
+                    <div class="ms-4 col-md-4">
+                        <button class="border border-gray rounded-2 outline-0 bg-transparent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#aab2c0"
+                                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                            </svg>
+                        </button>
+                        <button class="border border-gray rounded-2 outline-0 bg-transparent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#aab2c0"
+                                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                            </svg>
+                        </button>
+                        <span class="subfont ms-3">25 products viewed</span>
+
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-end align-items-center gap-1 mb-4">
+                        <span>sort by:</span>
+                        <div class="dropdown">
+                            <button class="btn bg-transparent  border-gray dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                bset selling
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Featured</a></li>
+                                <li><a class="dropdown-item" href="#">Alphabetically, A-Z</a></li>
+                                <li><a class="dropdown-item" href="#">Alphabetically, Z-A</a></li>
+                                <li><a class="dropdown-item" href="#">price, Low to High</a></li>
+                                <li><a class="dropdown-item" href="#">price, High to Low</a></li>
+                                <li><a class="dropdown-item" href="#">Date, Old to New</a></li>
+                                <li><a class="dropdown-item" href="#">Date, New to Old</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="container ">
+            <div class="row gap-5 ">
+                <aside class="col-md-3 border-end">
+
+
+
+                    <div class="mb-4 border-bottom p-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-semibold">Availability</span>
+                            <button class="border-0 bg-transparent p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="">0 selected</span>
+                            <button class="btn  p-0 text-decoration-none">Reset</button>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between mb-2">
+                            <label class="form-check-label">
+                                <input class="form-check-input " type="checkbox"> In Stock
+                            </label>
+                            <span>3</span>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> Out Stock
+                            </label>
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="mb-4  border-bottom p-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-semibold">Price</span>
+                            <button class="border-0 bg-transparent p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center gap-2 mb-2">
+                            <span class="fw-light ">The highest price is $850.00</span>
+                            <button class="btn  p-0 text-decoration-none">Reset</button>
+                        </div>
+
+                        <div class="row gx-2">
+                            <div class="col-6 ">
+                                <label>Min price:</label>
+                                <input class="form-control" type="text" placeholder="0" />
+                            </div>
+                            <div class="col-6">
+                                <label>Max price:</label>
+                                <input class="form-control " type="text" placeholder="850.00" />
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="mb-4  border-bottom p-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-semibold">PRODUCT TYPE</span>
+                            <button class="border-0 bg-transparent p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted">0 selected</span>
+                            <button class="btn  p-0 text-decoration-none">Reset</button>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between mb-2">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> Monitors
+
+                            </label>
+                            <span>4</span>
+                        </div>
+
+
+                    </div>
+                    <div class="mb-4  border-bottom p-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-semibold">Brand</span>
+                            <button class="border-0 bg-transparent p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted">0 selected</span>
+                            <button class="btn  p-0 text-decoration-none">Reset</button>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between mb-2">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> Acer
+                            </label>
+                            <span>1</span>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> Lenovo
+                            </label>
+                            <span>1</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> LG
+                            </label>
+                            <span>1</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> Samsung
+                            </label>
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="mb-4  border-bottom p-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-semibold">COLOR</span>
+                            <button class="border-0 bg-transparent p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted">0 selected</span>
+                            <button class="btn  p-0 text-decoration-none">Reset</button>
+                        </div>
+
+                        <div class="form-check-color d-flex gap-2 mb-2">
+                            <button type="button" class="btn btn-dark  "></button>
+                            <button type="button" class="btn btn-primary  "></button>
+                            <button type="button" class="btn btn-secondary"></button>
+                        </div>
+
+
+                    </div>
+                    <div class="mb-4  border-bottom p-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-uppercase fw-semibold">SIZE</span>
+                            <button class="border-0 bg-transparent p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted">0 selected</span>
+                            <button class="btn  p-0 text-decoration-none">Reset</button>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between mb-2">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> 21.5 Inches
+                            </label>
+                            <span>1</span>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> 25.5 Inches
+                            </label>
+                            <span>1</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> 28 Inches
+                            </label>
+                            <span>1</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> 30 Inches
+                            </label>
+                            <span>1</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input me-2" type="checkbox"> 32 Inches
+                            </label>
+                            <span>1</span>
+                        </div>
+                    </div>
+                </aside>
+                <div class=" col-md-8">
+                    <div class="row gap-2">
+                        <div class="col-md-3 sub-bg product custom-border  p-3 rounded-3 p-2">
+                            <div class=" d-flex  gap-1 ">
+
+                                <span class="badge custom-bg p-2">20%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/hyperx_chargeplay_duo_xbox_2_angled_controller_900x-removebg-preview.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Gaming Chair for Gamers with Lumbar</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">560$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">700$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 product sub-bg  custom-border  p-3 rounded-3  p-2">
+                            <div class=" d-flex  gap-1 ">
+                                <span class="badge  custom-bg p-2">New</span>
+                                <span class="badge custom-bg p-2">52%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/eco20-angle-glass-1000-removebg-preview.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Colossus Ergonomic Gaming Office Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        white
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">white</button></li>
+                                        <li><button class="dropdown-item">green</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">356$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">500$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 sub-bg product  custom-border  p-3 rounded-3 p-2">
+
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair4.webp" class="img-fluid rounded mt-lg-3"
+                                    alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Kepler Brooks Gaming Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold  mt-lg-4">560$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button
+                                            class=" custom-btn btn disabled px-1 mt-lg-4 py-2 fw-bold text-white custom-rounded">Sold
+                                            out
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                         <div class="row gap-2">
+                        <div class="col-md-3 sub-bg product custom-border  p-3 rounded-3 p-2">
+                            <div class=" d-flex  gap-1 ">
+
+                                <span class="badge custom-bg p-2">20%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/pc.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Gaming Chair for Gamers with Lumbar</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">560$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">700$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 product sub-bg  custom-border  p-3 rounded-3  p-2">
+                            <div class=" d-flex  gap-1 ">
+                                <span class="badge  custom-bg p-2">New</span>
+                                <span class="badge custom-bg p-2">52%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair1.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Colossus Ergonomic Gaming Office Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        white
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">white</button></li>
+                                        <li><button class="dropdown-item">green</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">356$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">500$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 sub-bg product  custom-border  p-3 rounded-3 p-2">
+
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair4.webp" class="img-fluid rounded mt-lg-3"
+                                    alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Kepler Brooks Gaming Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold  mt-lg-4">560$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button
+                                            class=" custom-btn btn disabled px-1 mt-lg-4 py-2 fw-bold text-white custom-rounded">Sold
+                                            out
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                      <div class="row gap-2">
+                        <div class="col-md-3 sub-bg product custom-border  p-3 rounded-3 p-2">
+                            <div class=" d-flex  gap-1 ">
+
+                                <span class="badge custom-bg p-2">20%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/Vr.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Gaming Chair for Gamers with Lumbar</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">560$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">700$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 product sub-bg  custom-border  p-3 rounded-3  p-2">
+                            <div class=" d-flex  gap-1 ">
+                                <span class="badge  custom-bg p-2">New</span>
+                                <span class="badge custom-bg p-2">52%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair1.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Colossus Ergonomic Gaming Office Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        white
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">white</button></li>
+                                        <li><button class="dropdown-item">green</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">356$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">500$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 sub-bg product  custom-border  p-3 rounded-3 p-2">
+
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair4.webp" class="img-fluid rounded mt-lg-3"
+                                    alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Kepler Brooks Gaming Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold  mt-lg-4">560$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button
+                                            class=" custom-btn btn disabled px-1 mt-lg-4 py-2 fw-bold text-white custom-rounded">Sold
+                                            out
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                      <div class="row gap-2">
+                        <div class="col-md-3 sub-bg product custom-border  p-3 rounded-3 p-2">
+                            <div class=" d-flex  gap-1 ">
+
+                                <span class="badge custom-bg p-2">20%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair2.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Gaming Chair for Gamers with Lumbar</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">560$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">700$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 product sub-bg  custom-border  p-3 rounded-3  p-2">
+                            <div class=" d-flex  gap-1 ">
+                                <span class="badge  custom-bg p-2">New</span>
+                                <span class="badge custom-bg p-2">52%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair1.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Colossus Ergonomic Gaming Office Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        white
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">white</button></li>
+                                        <li><button class="dropdown-item">green</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">356$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">500$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 sub-bg product  custom-border  p-3 rounded-3 p-2">
+
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair4.webp" class="img-fluid rounded mt-lg-3"
+                                    alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Kepler Brooks Gaming Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold  mt-lg-4">560$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button
+                                            class=" custom-btn btn disabled px-1 mt-lg-4 py-2 fw-bold text-white custom-rounded">Sold
+                                            out
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                      <div class="row gap-2">
+                        <div class="col-md-3 sub-bg product custom-border  p-3 rounded-3 p-2">
+                            <div class=" d-flex  gap-1 ">
+
+                                <span class="badge custom-bg p-2">20%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair2.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Gaming Chair for Gamers with Lumbar</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">560$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">700$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 product sub-bg  custom-border  p-3 rounded-3  p-2">
+                            <div class=" d-flex  gap-1 ">
+                                <span class="badge  custom-bg p-2">New</span>
+                                <span class="badge custom-bg p-2">52%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair1.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Colossus Ergonomic Gaming Office Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        white
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">white</button></li>
+                                        <li><button class="dropdown-item">green</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">356$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">500$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 sub-bg product  custom-border  p-3 rounded-3 p-2">
+
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/chair4.webp" class="img-fluid rounded mt-lg-3"
+                                    alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Kepler Brooks Gaming Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold  mt-lg-4">560$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button
+                                            class=" custom-btn btn disabled px-1 mt-lg-4 py-2 fw-bold text-white custom-rounded">Sold
+                                            out
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                      <div class="row gap-2">
+                        <div class="col-md-3 sub-bg product custom-border  p-3 rounded-3 p-2">
+                            <div class=" d-flex  gap-1 ">
+
+                                <span class="badge custom-bg p-2">20%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/hyperx_chargeplay_duo_xbox_2_angled_controller_900x-removebg-preview.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Gaming Chair for Gamers with Lumbar</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">560$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">700$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 product sub-bg  custom-border  p-3 rounded-3  p-2">
+                            <div class=" d-flex  gap-1 ">
+                                <span class="badge  custom-bg p-2">New</span>
+                                <span class="badge custom-bg p-2">52%</span>
+                            </div>
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/hyperx_rubber_keycaps_red_us_4_individual_480x480-removebg-preview.webp" class="img-fluid rounded" alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Colossus Ergonomic Gaming Office Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        white
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">white</button></li>
+                                        <li><button class="dropdown-item">green</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold ">356$</span>
+                                    <span class="text-decoration-line-through subfont fs-5 ">500$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">Add
+                                            to
+                                            cart
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 sub-bg product  custom-border  p-3 rounded-3 p-2">
+
+                            <div class="text-center mb-3">
+                                <img src="./assets/image/products/htc.webp" class="img-fluid rounded mt-lg-3"
+                                    alt="chair">
+                            </div>
+                            <h5 class=" fw-semibold">Kepler Brooks Gaming Chair</h5>
+                            <div class="text-warning mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000"
+                                        d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                </svg>
+
+
+                            </div>
+                            <div class="position-relative">
+                                <div class="dropdown  mb-3">
+                                    <button class=" w-100 border-gray bg-transparent subfont dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        50D X 66W
+                                    </button>
+                                    <ul class="dropdown-menu bg-white w-100">
+                                        <li><button class="dropdown-item">50D X 66W</button></li>
+                                        <li><button class="dropdown-item">52D X 66W</button></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="fs-4 fw-bold  mt-lg-4">560$</span>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="collection.html" class="btn-link">
+                                        <button
+                                            class=" custom-btn btn disabled px-1 mt-lg-4 py-2 fw-bold text-white custom-rounded">Sold
+                                            out
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row gap-5">
+                <div class="col-md-3  p-4">
+                    <img src="./assets/image/logo/footer-logo.webp">
+                    <h2 class="text-white py-2">Reach out & let your mind explore</h2>
+                    <p class="text-white py-2">I also love the challenge of trying to beat a difficult game or master a
+                        new skill.</p>
+                </div>
+                <div class="col-md-2 navigation p-4">
+                    <h2 class="text-white">NAVIGATION</h2>
+                    <ul>
+                        <li class="custom-a"><a class="custom-a text-white " href="search.html">Search</a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="collections.html">All Collections</a>
+                        </li>
+                        <li class="custom-a"><a class="custom-a text-white" href="all.html">All products </a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="#">Article page</a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="news.html">Blog page</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 navigation p-4">
+                    <h2 class="text-white">Usefull Link</h2>
+                    <ul>
+                        <li class="custom-a"><a class="custom-a text-white " href="about-us.html">About Us</a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="contact-us.html">Contact with us</a>
+                        </li>
+                        <li class="custom-a"><a class="custom-a text-white" href="fags.html">FAQ's</a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="privacy-policy.html">Privacy
+                                Policy</a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="shipping-delivery.html">Shipping &
+                                Delivery</a></li>
+                        <li class="custom-a"><a class="custom-a text-white" href="terms-condition.html">Terms &
+                                Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 p-4 ">
+                    <h2 class="text-white">SHARE</h2>
+                    <div class=" d-flex align-items-center  gap-2">
+                        <a class="custom-footer-a" href="facebook"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+                        <a class="custom-footer-a" href="instagram"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                        <a class="custom-footer-a" href="youtube"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg></a>
+                        <a class="custom-footer-a" href="pintrest"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+                            </svg> </a>
+                        <a class="custom-footer-a" href="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-7">
+                    <p class="text-white">© 2025, Gaming WorkDo, Powered by WorkDo.io</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="./assets/image/payment/pay.webp" />
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasRightLabel  p-5 fs-6 fw-6">Your cart</h4>
+
+            <button type="button  offcanvas-btn" class="btn-close rounded-circle" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column gap-4 m-auto mt-5 p-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <img class="" src="./assets/image/cart/cart.webp" alt="cart-indicator" />
+            </div>
+            <div>
+                <h5 class="text-center">Your cart is empty</h5>
+                <a href="collection.html" class="btn-link">
+                    <button class=" custom-btn btn px-1 py-2 fw-bold text-white custom-rounded">CONTINUE
+                        SHOPPING</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--bootstrap js 5.3-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
