@@ -155,14 +155,14 @@ li {
   transform: rotate(180deg);
 }
 
-.navbar.nav-item.dropdown.show .dropdown-menu,
+/* .navbar.nav-item.dropdown.show .dropdown-menu,
 .navbar.nav-item.dropdown:hover .dropdown-menu {
   transform: translateY(0);
   max-height: 1000px;
   opacity: 1;
   visibility: visible;
 
-}
+} */
 
 .layout-title,
 .product-name {
@@ -470,14 +470,14 @@ input[type='text']::placeholder {
 }
 .image-blur-zoom {
   transition: all 0.4s ease;
-  filter: brightness(-0.5);
+  filter: brightness(0.9);
 }
 
 .image-blur-zoom:hover {
   transform: scale(1.05);
   filter: brightness(1.1) blur(1px);
 }
-
+ 
 .product {
   width: 240px;
 }
