@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--bootstrap css 5.3-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
@@ -22,7 +24,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg   ">
+    <nav class="navbar  position-sticky top-0 z-3 navbar-expand-lg   ">
         <div class="container-fluid mx-5 ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -372,7 +374,7 @@
         </div>
 
     </nav>
-    <section class="promo-banner d-flex justify-content-around ">
+    <section class="promo-banner d-flex justify-content-around sections ">
         <div class="banner-title d-flex align-items-center p-4">
             <p class="text-white">New Accessories -30 % Off. More</p>
         </div>
@@ -395,43 +397,11 @@
         </div>
 
     </section>
-    <!-- <section class="best-pro-gaming d-flex flex-column justify-content-center align-items-center ">
-        <div class="d-flex flex-column justify-content-center align-items-center mt-1">
-
-            <nav aria-label="breadcrumb  d-flex align-items-start">
-                <ol class="breadcrumb  text-white w-100 mb-5  rounded-5 bg-black p-2 ">
-                    <li class="breadcrumb-item active text-white " aria-current="page"><span
-                            class="badge custom-bg  p-2 rounded-5">
-                            Featured
-                        </span></li>
-                    <li class="breadcrumb-item text-white"><a class="link-primary text-white" href="#">New featured
-                            collection</a>
-                    </li>
-                    <li class="breadcrumb-item "><a class="link-primary " href="#"> Gaming collection</a></li>
-
-                </ol>
-            </nav>
-            <h2 class="text-white fs-1 fw-semibold text-center ">Best<span class="custom-color bg-transparent"> Pro
-                    Gaming</span>
-                Accessories</h2>
-            <p class="text-white text-wrap text-center fs-5" style="max-width: 600px;">Gaming accessories include gear
-                such as headsets, extra
-                controllers, charging
-                stations, memory devices, carrying cases and much more.</p>
-            <div class="d-flex gap-4 p-4 ">
-                <a class="custom-rounded custom-bg p-3 text-white custom-btn btn-link text-decoration-none  "
-                    href="collections.html">Show products</a>
-                <a class="custom-rounded custom-bg p-3 text-white custom-btn btn-link text-decoration-none "
-                    href="collections.html">Show collections</a>
-            </div>
-        </div>
-
-    </section> -->
     <section class="best-pro-gaming d-flex flex-column justify-content-center align-items-center text-white">
         <div class="overlay-blur position-absolute top-0 start-0 w-100 h-100"></div>
-        <div class="z-1 text-center ">
-            <nav aria-label="breadcrumb" class="d-flex justify-content-md-center mb-4">
-                <ol class="breadcrumb bg-black bg-opacity-75 p-2 rounded-pill flex-wrap small">
+        <div class=" z-2 text-center ">
+            <nav aria-label="breadcrumb" class="d-flex justify-content-md-center mb-4 ">
+                <ol class="breadcrumb bg-black bg-opacity-75 p-2 rounded-pill flex-wrap small z-1">
                     <li class="breadcrumb-item active text-white" aria-current="page">
                         <span class="badge custom-bg p-2  rounded-pill">Featured</span>
                     </li>
@@ -512,16 +482,16 @@
 
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item shadow-lg  active shadow-section">
+                        <div class="carousel-item shadow-lg  active shadow-section ">
                             <div class="row  gy-4">
-                                <div class="mx-auto col-md-4 border border-primary-subtle p-3 rounded-4 product-bg text-white"
+                                <div class="mx-auto  col-md-4 border border-primary-subtle p-3 rounded-4 product-bg text-white"
                                     style="max-width: 350px; position: relative; ">
                                     <div class="position-absolute top-0 start-0 p-3 d-flex gap-1 ">
                                         <span class="badge custom-bg p-2">New</span>
                                         <span class="badge custom-bg p-2">37%</span>
                                     </div>
-                                    <div class="text-center mb-3">
-                                        <img src="./assets/image/products/atary.webp" class="img-fluid rounded"
+                                    <div class="text-center mb-3"> 
+                                        <img src="./assets/image/products/atary.webp" class="img-fluid rounded product-image"
                                             alt="atary-product">
                                     </div>
                                     <a href="product-details.html " class="text-white ">
@@ -591,7 +561,7 @@
                                     style="max-width: 350px; position: relative; ">
                                     <div class="text-center mb-3">
                                         <img src="./assets/image/products/hyperx_pudding_keycaps_pbt_black_us_1_angled_renamed_3_1600x-removebg-preview.webp"
-                                            class="img-fluid rounded"
+                                            class="img-fluid rounded product-image"
                                             alt="hyperx_pudding_keycaps_pbt_black_us_1_angled_renamed_3_1600x-removebg-preview">
                                     </div>
                                     <a href="product-details.html" class="text-white">
@@ -660,7 +630,7 @@
                                 <div class="mx-auto border col-md-4 border-primary-subtle p-3 rounded-4 product-bg text-white"
                                     style="max-width: 350px; position: relative; ">
                                     <div class="text-center mb-3">
-                                        <img src="./assets/image/products/pc.webp" class="img-fluid rounded" alt="pc">
+                                        <img src="./assets/image/products/pc.webp" class="img-fluid rounded product-image" alt="pc">
                                     </div>
                                     <a href="product-details.html" class="text-white">
                                         <h5 class=" fw-semibold">Alien Ware Monitor T 64</h5>
@@ -2105,7 +2075,7 @@
         <div class="container-fluid bg-white">
             <div class="row position-relative align-items-center">
                 <div
-                    class="bset-categories-btn col-md-3 z-3 bg-transparent top-100 bg-white d-flex flex-column gap-2 w-100 p-3">
+                    class="bset-categories-btn col-md-3 z-1 bg-transparent top-100 bg-white d-flex flex-column gap-2 w-100 p-3">
                     <a class=" responsive-link  main-bg text-white flex-column gap-2 align-items-center  custom-style btn btn-outline-secondary px-3 py-2 sub-pattern fw-semibold subfont  "
                         href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -3056,7 +3026,23 @@
 
 
 
+<div class="modal-overlay ">
+    <div class="my-modal">
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-xmark"></i>
+        <img class="modal_img d-flex justify-content-center align-items-center" src="">
+        <h5 class="modal_name"></h5>
+        <div class="modal-colors"></div>
+        <div class="modal_price">
+            <span class="current_price"></span>
+            <span class="old_price"></span>
+        </div>
+        <!-- <button class=" custom-btn btn px-1 py-2 fw-bold fs-5 text-white custom-rounded">
+            Add to cart</button> -->
 
+    </div>
+</div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -3085,7 +3071,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
