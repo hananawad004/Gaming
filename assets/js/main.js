@@ -9,74 +9,79 @@ window.addEventListener("scroll", (e) => {
         nav.classList.remove("bg-transparent");
     }
 })
+
 //add modal
-const showmodal = () => {
-    const content_modal = document.querySelector('.modal-overlay');
-    const images = Array.from(document.querySelectorAll('.product-image'));
-    const left_arrow = document.querySelector('.fa-arrow-left');
-    const right_arrow = document.querySelector('.fa-arrow-right');
-    const modal_image = document.querySelector('.modal_img');
-    const close_btn = document.querySelector('.fa-xmark');
-    let curr = 0;
-    let modalflag = false;
-    images.forEach( (img) => {
-        img.addEventListener("click",(e)=>{
-        showemod();
-        modalflag = true;
-        curr = images.indexOf(e.target);
-        console.log(curr);
-        modal_image.setAttribute('src', e.target.getAttribute('src'));
-        modal_image.classList.add('w-50');
-        })
-    })
+const showModal = () => {
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const modalImg = document.querySelector('.modal_img');
+    const modalName = document.querySelector('.modal_name');
+    const modalColors = document.querySelector('.modal_colors');
+    const modalCurrentPrice = document.querySelector('.modal_price .current_price');
+    const modalOldPrice = document.querySelector('.modal_price .old_price');
+    const rightArrow = document.querySelector('.arrow-right');
+    const leftArrow = document.querySelector('.arrow-left');
+    const closeBtn = document.querySelector('.close-btn');
 
+    let current = 0;
 
-    const showemod = () => {
-        content_modal.classList.add("show");
-        modalflag = true;
-
+    const hideModal = () => {
+        modalOverlay.classList.remove('show');
     }
-    const hidemodal = () => {
-        content_modal.classList.remove("show");
-        modalflag = false;
 
-    }
-    const nextimg = () => {
-        curr++;
-        if (curr >= images.length)
-            curr = 0;
-        modal_image.setAttribute('src', images[curr].getAttribute('src'));
-    }
-    const previosimage = () => {
-        curr--;
-        if (curr < 0) {
-            curr = images.length - 1;
+    const products = productCards.map(card => ({
+        img: card.querySelector('.product-image')?.src || '',
+        name: card.querySelector('.product-name')?.textContent || '',
+        colors: Array.from(card.querySelectorAll('.product-colors .dropdown-item')).map(c => c.textContent),
+        prices: {
+            current: card.querySelector('.new-price')?.textContent || '',
+            old: card.querySelector('.old-price')?.textContent || ''
         }
+    }));
 
-        modal_image.setAttribute('src', images[curr].getAttribute('src'));
+    const showProduct = (index) => {
+        if(index < 0) index = products.length - 1;
+        if(index >= products.length) index = 0;
+        current = index;
+
+        const product = products[current];
+        modalImg.src = product.img;
+        modalName.textContent = product.name;
+        modalCurrentPrice.textContent = product.prices.current;
+        modalOldPrice.textContent = product.prices.old;
+
+        modalColors.innerHTML = `
+          <div class="dropdown">
+            <button class="w-100 border-gray bg-transparent subfont dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Choose Color
+            </button>
+            <ul class="dropdown-menu w-100">
+              ${product.colors.map(color => `<li><button class="dropdown-item">${color}</button></li>`).join('')}
+            </ul>
+          </div>
+        `;
+
+        modalOverlay.classList.add('show');
     }
-   
-    document.addEventListener("keydown", ({ code }) => {
-      
-        if (code == 'ArrowRight') {
-            previosimage();
-        }
-        if (code == 'ArrowLeft') {
-            nextimg();
-        }
-        if (code == 'Escape') {
-            hidemodal();
-        }
-    })
-  
-    document.addEventListener("click", (e) => {
-        console.log(e);
-        if (modalflag && e.target.classList.contains('modal-overlay')) {
-            hidemodal();
-        }
-    })
-    right_arrow.addEventListener("click", nextimg);
-    left_arrow.addEventListener("click", previosimage);
-    close_btn.addEventListener("click", hidemodal);
+
+    productCards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            showProduct(index);
+        });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        showProduct(current + 1);
+    });
+    leftArrow.addEventListener('click', () => {
+        showProduct(current - 1);
+    });
+
+    closeBtn.addEventListener('click', hideModal);
+
+    modalOverlay.addEventListener('click', (e) => {
+        if(e.target === modalOverlay) hideModal();
+    });
 }
-showmodal();
+
+showModal();

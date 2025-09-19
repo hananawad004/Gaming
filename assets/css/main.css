@@ -577,20 +577,21 @@ input[type='text']::placeholder {
 .product-img {
   border: 5px solid #0087E3;
 }
-.modal-overlay {
+
+ .modal-overlay {
     position: fixed;
     z-index: 9;
-    top:0px;
-    left:0;
-    width:100%;
-    height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(8px);
-    background-color: rgba(245, 121, 121, 0); 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     visibility: hidden;
-    opacity:0;
+    opacity: 0;
     transition: all 0.5s;
 }
 
@@ -601,17 +602,45 @@ input[type='text']::placeholder {
 
 .my-modal {
     position: relative;
-    background-color: rgba(28, 47, 107, 0.3); 
-    padding:20px;
+    background-color: rgba(28, 27, 107, 0.3);
+    padding: 20px;
     border-radius: 15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 30%;
+    color: white;
 }
 
-.fa-arrow-right,.fa-arrow-left,.fa-xmark{
+.modal_img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.modal_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.modal_price {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+
+.fa-arrow-right, .fa-arrow-left, .fa-xmark {
     position: absolute;
-    background-color:rgb(247, 247, 247) ;
+    background-color: #f7f7f7;
     color: #000;
     height: 30px;
     width: 30px;
@@ -619,17 +648,8 @@ input[type='text']::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.fa-arrow-right{
-    top: 190px;
-    right: 10px;
-   
-}
-.fa-arrow-left{
-    top: 190px;
-    left: 10px;
-}
-.fa-xmark{
-    top: 10px;
-    right: 10px;
-}
+.fa-arrow-right { top: 50%; right: 10px;  }
+.fa-arrow-left { top: 50%; left: 10px;  }
+.fa-xmark { top: 10px; right: 10px; }
