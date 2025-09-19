@@ -65,7 +65,7 @@ const showModal = () => {
     }
 
     productCards.forEach((card, index) => {
-        card.addEventListener('click', () => {
+        card.querySelector('.product-image').addEventListener('click', () => {
             showProduct(index);
         });
     });
